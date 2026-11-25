@@ -3,45 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy for Meridian Brief</title>
+  <title>Privacy Policy — Meridian Brief</title>
+  <meta name="description" content="Privacy Policy and Data Deletion instructions for the Meridian Brief Android application.">
   <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --navy: #0f2544;
+      --ink: #1b2430;
+      --muted: #556275;
+      --border: #dce3ec;
+      --accent: #1d5bbf;
+    }
+    * { box-sizing: border-box; }
     body {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #24292f;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    header {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 36px 20px 30px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    header a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    header a:hover {
+      color: #ffffff;
+    }
+    header h1 {
+      margin: 10px 0 6px;
+      font-size: 30px;
+    }
+    header p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+    main {
+      padding: 28px 20px 56px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-bottom: 18px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 19px;
+      color: var(--navy);
+    }
+    .card p {
+      margin: 0 0 10px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 22px 20px 40px;
+      color: var(--muted);
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <a href="./index.html">&larr; Back to Meridian Brief Publisher &amp; Contact</a>
+      <h1>Privacy Policy</h1>
+      <p>Effective Date: November 21, 2026 &middot; App: Meridian Brief (<code>com.aistudio.meridianbrief.qxvwzt</code>)</p>
+    </div>
+  </header>
+
   <main>
-    <h1>Privacy Policy for Meridian Brief</h1>
-    <p><strong>Last updated:</strong> November 2026</p>
+    <div class="container">
+      <section class="card">
+        <h2>1. Overview</h2>
+        <p>Meridian Brief is published by <strong>sandeepe</strong>. We respect your privacy and collect only the minimum information needed to provide optional account sync and on-demand verification briefs.</p>
+        <p>You can use Meridian Brief in <strong>Guest Mode</strong> without signing in or providing any personal information.</p>
+      </section>
 
-    <p>Meridian Brief ("we", "our", or the "App") respects your privacy. This Privacy Policy explains how information is handled when you use the Meridian Brief Android application (com.aistudio.meridianbrief.qxvwzt).</p>
+      <section class="card">
+        <h2>2. Data We Collect &amp; How It Is Used</h2>
+        <ul>
+          <li><strong>Optional Google Sign-In (Firebase Authentication):</strong> If you choose to sign in with Google, we receive your basic Google account identifier (UID, display name, and email address) solely to authenticate your session and isolate your synced data.</li>
+          <li><strong>User-Saved Preferences &amp; Bookmarks (Cloud Firestore):</strong> When signed in, your saved briefings, tracked visa timelines, and watched market tickers are stored privately under your user ID in Firebase Cloud Firestore so they remain available across devices. In Guest Mode, saved items stay strictly on your device.</li>
+          <li><strong>On-Demand AI Summaries &amp; Verification (Firebase AI Logic):</strong> When you explicitly request an AI brief or source verification query, your query text is sent securely through Firebase AI Logic to generate a grounded summary. We do not sell your queries or use them for advertising.</li>
+          <li><strong>App Integrity (Firebase App Check):</strong> Used to verify that requests originate from genuine installations of Meridian Brief.</li>
+          <li><strong>Local Storage:</strong> Theme preference, notification settings, recent search history, and offline caches are stored locally on your device.</li>
+        </ul>
+      </section>
 
-    <h2>1. Information We Collect and Use</h2>
-    <p><strong>Google Sign-In &amp; Account Information:</strong> When you sign in with Google via Firebase Authentication, we receive your basic profile identifiers (such as your name, email address, and unique user ID) solely to authenticate your account and keep your saved items private to you.</p>
+      <section class="card">
+        <h2>3. Data Sharing &amp; Advertising</h2>
+        <p>Meridian Brief does <strong>not</strong> sell personal data, does not include third-party ad networks, and does not share your saved items with other users. Data is processed only by Google Firebase infrastructure solely to operate authentication, database sync, App Check, and requested AI summaries.</p>
+      </section>
 
-    <p><strong>App Activity You Save:</strong> Bookmarked briefings, watched market tickers, tracked visa milestones, recent searches, and alert/theme preferences are stored locally on your device and synced to your private Google Cloud Firestore storage so your data persists across sessions.</p>
+      <section class="card">
+        <h2>4. Account &amp; Data Deletion</h2>
+        <p>You can remove saved bookmarks, visa trackers, and watched tickers directly inside the app, clear local data by uninstalling the app, or sign out at any time from Settings.</p>
+        <p>To request permanent deletion of your Firebase Authentication account and all associated Cloud Firestore data, email <a href="mailto:sandeep.ethakotadeveloper@gmail.com">sandeep.ethakotadeveloper@gmail.com</a> with the subject line <em>"Meridian Brief Data Deletion Request"</em> from the email address associated with your account. Requests are processed within 7 days.</p>
+      </section>
 
-    <p><strong>Search &amp; AI Verification Queries:</strong> Topics, tickers, and article URLs you submit to the Verify, Markets, or Article Brief features are sent securely through Firebase AI Logic to retrieve search-grounded summaries.</p>
-
-    <p><strong>Optional Notifications:</strong> If you enable news alerts, the App requests notification permission (POST_NOTIFICATIONS) solely to deliver local alerts for new official briefings.</p>
-
-    <h2>2. Third-Party Services</h2>
-    <p>Meridian Brief uses Google Firebase (Authentication, Cloud Firestore, App Check, and Firebase AI Logic) to provide sign-in, cloud sync, security verification, and grounded summarization, and fetches public data from official government/regulatory feeds and financial chart endpoints. The App does not use third-party advertising SDKs and does not sell your personal data.</p>
-
-    <h2>3. Data Retention &amp; Deletion</h2>
-    <p>You can remove bookmarks, tracked visas, watched tickers, and recent searches at any time directly inside the App. To request deletion of your account data stored in Cloud Firestore, contact us at <a href="mailto:sandeep.ethakotadeveloper@gmail.com">sandeep.ethakotadeveloper@gmail.com</a>.</p>
-
-    <h2>4. Children's Privacy</h2>
-    <p>Meridian Brief is not directed to children under 13 and does not knowingly collect personal information from children.</p>
-
-    <h2>5. Contact Us</h2>
-    <p>For privacy questions or data deletion requests, contact: <a href="mailto:sandeep.ethakotadeveloper@gmail.com">sandeep.ethakotadeveloper@gmail.com</a>.</p>
+      <section class="card">
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, contact us at <a href="mailto:sandeep.ethakotadeveloper@gmail.com">sandeep.ethakotadeveloper@gmail.com</a>.</p>
+      </section>
+    </div>
   </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Meridian Brief &middot; Contact: <a href="mailto:sandeep.ethakotadeveloper@gmail.com">sandeep.ethakotadeveloper@gmail.com</a>
+    </div>
+  </footer>
 </body>
 </html>
